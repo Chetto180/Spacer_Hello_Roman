@@ -31,7 +31,6 @@ export default {
             axios.get(`${API}/search?q=${this.searchValue}&media_type=image`)
             .then(response=>{
                 this.results = response.data.collection.items;
-                console.log(this.results)
             })
             .catch(error=>console.log(error));
         },500)
